@@ -5,8 +5,8 @@
 - TechWorld with Nana. Kubernetes Tutorial for Beginners [Video]. YouTube.
 - Kubernetes Documentation. (n.d.). Concepts. Truy cập ngày 14/08/2026, từ https://kubernetes.io/docs/concepts/
 
-## Ngày 2 —
-
+## Ngày 2 — ArgoCD Example Apps — Guestbook
+https://github.com/argoproj/argocd-example-apps
 
 ## Ngày 3 —
 
