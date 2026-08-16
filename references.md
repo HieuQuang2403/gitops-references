@@ -37,8 +37,19 @@ https://github.com/argoproj/argocd-example-apps
   Dùng để đối chiếu Sync Revision (commit hash) trong tab History and Rollback với commit trên GitHub, làm bằng chứng ArgoCD tự đồng bộ đúng thay đổi.
 
 
-## Ngày 6 —
+## Ngày 6
 
+- **Nguồn:** Argo CD Docs – Automated Sync Policy (Self-Heal)
+  **URL:** https://argo-cd.readthedocs.io/en/stable/user-guide/auto_sync/
+  **Sử dụng:** Tham khảo cơ chế `selfHeal` — khi bật, Argo CD tự động sync lại sau self-heal timeout (mặc định 5 giây) nếu phát hiện trạng thái cluster lệch khỏi Git, dùng làm cơ sở lý thuyết cho phần demo self-healing ở tầng GitOps (xóa deployment → Argo CD tự phục hồi).
+
+- **Nguồn:** Argo CD Docs – Core Concepts (Sync & Health status)
+  **URL:** https://argo-cd.readthedocs.io/en/latest/core_concepts/
+  **Sử dụng:** Tham khảo định nghĩa "Sync" (so sánh trạng thái Git với trạng thái live) và "Health" (ứng dụng có đang chạy đúng không), dùng để giải thích trạng thái OutOfSync → Synced khi chụp ảnh minh chứng.
+
+- **Nguồn:** Git Docs – git-revert(1)
+  **URL:** https://git-scm.com/docs/git-revert
+  **Sử dụng:** Tham khảo cơ chế `git revert` — tạo commit mới để hoàn tác thay đổi của commit trước đó mà không xóa lịch sử, dùng làm cơ sở cho bước test rollback (sửa sai → revert → push → Argo CD tự đưa hệ thống về trạng thái cũ).
 
 ## Ngày 7 —
 
